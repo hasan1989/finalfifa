@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="possession.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="head"> <h1>Know Your Opponent</h1></div>
+        <div class="btncontainer">
+            <button class="btn" onclick="possCont()">Possession</button>
+            <button class="btn" onclick="passDone()">Passes</button>
+            <button class="btn" onclick="passAccu()">Pass Accuracy</button>
+            <button class="btn" onclick="attemptDone()">Attempt</button>
+            <button class="btn" onclick="myGoals()">Goals</button>
+            <button class="btn" onclick="setDone()">Set Play</button>
+            <button class="btn" onclick="defendDone()">Defending</button>
+            <button class="btn" onclick="dipDone()">Discipline</button>
+        </div>
+   
+    <div class="divcontainer">
+        <div class="arg">ARGENTINA</div>
+        <div class="fra">FRANCE</div>
+    </div>
+
+
+    <div class="tablecontainer" id="goals">
+        
+        <div class="table-arg">
+            <pre>
+    🟥 Argentina  1 - 2  Saudi Arabia 🟩
+    🟩 Argentina  2 - 0  Mexico 🟥
+    🟩 Argentina  2 - 0  Poland 🟥
+    🟩 Argentina  2 - 1  Australia 🟥
+ 🟩 Argentina  2(4) - 2(3)  Netherand 🟥
+    🟩 Argentina  3 - 0  Croatia 🟥
+            </pre>
+        </div>
+    
+        <div class="table-fra">
+            <pre>
+    France  4 - 1  Australia
+    France  2 - 1  Denmark
+    France  0 - 1  Tunisia
+    France  3 - 1  Poland
+    France  2 - 1  England
+    France  3 - 0  Croatia
+            </pre>
+        </div>
+    </div>
+
+    <!-- POSSESSION -->
+    
+    <div class="poss" id="possession">
+        <div class="table-arg">
+            <pre>
+    Argentina  64% - 36%  Saudi Arabia
+    Argentina  20% - 10%  Mexico
+    Argentina  2 - 0  Poland
+    Argentina  2 - 1  Australia
+ Argentina  2(4) - 2(3)  Netherand
+    Argentina  3 - 0  Croatia
+            </pre>
+        </div>
+    
+        <div class="table-fra">
+            <pre>
+    France  40% - 60%  Australia
+    France  20% - 10%  Denmark
+    France  04% - 15%  Tunisia
+    France  35% - 15%  Poland
+    France  25% - 15%  England
+    France  35% - 04%  Croatia
+            </pre>
+        </div>
+    </div>
+
+    <!-- PASS -->
+
+    <div class="pass" id="passes">
+        <div class="table-arg">
+            <pre>
+    Argentina  100 - 200  Saudi Arabia
+    Argentina  100 - 200  Mexico
+    Argentina  100 - 200  Poland
+    Argentina  100 - 200  Australia
+    Argentina  300 - 400  Netherand
+    Argentina  103 - 880  Croatia
+            </pre>
+        </div>
+    
+        <div class="table-fra">
+            <pre>
+    France  580 - 300  Australia
+    France  580 - 300  Denmark
+    France  580 - 300  Tunisia
+    France  580 - 300  Poland
+    France  580 - 300  England
+    France  580 - 300  Croatia
+            </pre>
+        </div>
+    </div>
+
+
+    <!-- PASS ACCURACY -->
+
+    <div class="passaccuracy" id="passaccuracyid">
+        <div class="table-arg">
+            <pre>
+    Argentina  0100 - 9200  Saudi Arabia
+    Argentina  0100 - 9200  Mexico
+    Argentina  0100 - 9200  Poland
+    Argentina  0100 - 9200  Australia
+    Argentina  0300 - 9400  Netherand
+    Argentina  0103 - 9880  Croatia
+            </pre>
+        </div>
+    
+        <div class="table-fra">
+            <pre>
+    France  9580 - 93300  Australia
+    France  9580 - 93300  Denmark
+    France  9580 - 93300  Tunisia
+    France  9580 - 933930  Poland
+    France  9580 - 93300  England
+    France  9580 - 93300  Croatia
+            </pre>
+        </div>
+    </div>
+
+    <!-- ATTEMPT -->
+
+    <div class="attempt" id="attemptid">
+        <div class="table-arg">
+            <pre>
+    Argentina  *9100 - 200  Saudi Arabia
+    Argentina  *9100 - 200  Mexico
+    Argentina  *9100 - 200  Poland
+    Argentina  *9100 - 200  Australia
+    Argentina  *9300 - 400  Netherand
+    Argentina  *9103 - 880  Croatia
+            </pre>
+        </div>
+    
+        <div class="table-fra">
+            <pre>
+    France  580 - 300  Australia
+    France  580 - 300  Denmark
+    France  580 - 300  Tunisia
+    France  580 - 300  Poland
+    France  580 - 300  England
+    France  580 - 300  Croatia
+            </pre>
+        </div>
+    </div>
+
+    <!-- SET PLAY -->
+
+    <div class="setplay" id="setplayid">
+        <div class="table-arg">
+            <pre>
+    Argentina  #100 - 200  Saudi Arabia
+    Argentina  #100 - 200  Mexico
+    Argentina  #100 - 200  Poland
+    Argentina  #100 - 200  Australia
+    Argentina  #300 - 400  Netherand
+    Argentina  #103 - 880  Croatia
+            </pre>
+        </div>
+    
+        <div class="table-fra">
+            <pre>
+    France  580 - 300  Australia
+    France  580 - 300  Denmark
+    France  580 - 300  Tunisia
+    France  580 - 300  Poland
+    France  580 - 300  England
+    France  580 - 300  Croatia
+            </pre>
+        </div>
+    </div>
+
+    <!-- DEFENDING -->
+
+    <div class="defending" id="defendingid">
+        <div class="table-arg">
+            <pre>
+    Argentina  %100 - 200  Saudi Arabia
+    Argentina  %100 - 200  Mexico
+    Argentina  %100 - 200  Poland
+    Argentina  %100 - 200  Australia
+    Argentina  %300 - 400  Netherand
+    Argentina  %103 - 880  Croatia
+            </pre>
+        </div>
+    
+        <div class="table-fra">
+            <pre>
+    France  580 - 300  Australia
+    France  580 - 300  Denmark
+    France  580 - 300  Tunisia
+    France  580 - 300  Poland
+    France  580 - 300  England
+    France  580 - 300  Croatia
+            </pre>
+        </div>
+    </div>
+
+    <!-- DISCIPLINE -->
+
+    <div class="discipline" id="disciplineid">
+        <div class="table-arg">
+            <pre>
+    Argentina  🔴 - 🔴 Saudi Arabia
+    Argentina  🔴 - 🔴 Mexico
+    Argentina  🔴 - 🔴 Poland
+    Argentina  🔴 - 🔴 Australia
+    Argentina  🔴 - 🔴 Netherand
+    Argentina  🔴 - 🔴 Croatia
+            </pre>
+        </div>
+    
+        <div class="table-fra">
+            <pre>
+    France  🟡 - 🟡  Australia
+    France  🟡 - 🟡  Denmark
+    France  🟡 - 🟡  Tunisia
+    France  🟡 - 🟡  Poland
+    France  🟡 - 🟡  England
+    France  🟡 - 🟡  Croatia
+            </pre>
+        </div>
+    </div>
+
+    
+    <script src="index.js"></script>
+    <script src="goals.js"></script>
+    <script src="possession.js"></script>
+    <script src="pass.js"></script>
+    <script src="attempt.js"></script>
+    <script src="defending.js"></script>
+    <script src="discipline.js"></script>
+    <script src="passaccuracy.js"></script>
+    <script src="setplay.js"></script>
+</body>
+</html>

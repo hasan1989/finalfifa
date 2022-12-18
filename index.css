@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(142, 245, 245);
+    margin-top: 20px;
+}
+
+.head {
+    text-align: center;
+    /* background-color: blueviolet; */
+}
+
+.btncontainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* background-color: chartreuse; */
+}
+
+.btn {
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn_active {
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+    background-color: rgb(159, 215, 252);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.divcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    /* border: 1px solid black; */
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+/* .arg, .fra {
+    border: 1px solid green;
+} */
+
+.tablecontainer, .pass, .poss, .passaccuracy, .attempt, .setplay, .defending, .discipline {
+    font-size: 20px;
+    display: none;
+    flex-direction: row;
+    justify-content:space-around;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
